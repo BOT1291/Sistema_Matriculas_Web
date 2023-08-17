@@ -4,6 +4,22 @@
 
 
     <style>
+        .footer-text {
+    color: orange;
+}
+
+        .background {
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: linear-gradient(45deg, #34495e, #2c3e50);*/ /* Colores más formales */
+    /*background: rgb(230,230,250);*/
+    background: rgb(33,43,61);/*un color mas llamativo*/
+    z-index: -1;
+        }
+
     .title-panel {
             background: #333;
             color: white;
@@ -28,6 +44,7 @@
         border-radius: 10px;
         width: 400px;
             height: 665px;
+            background: rgb(255,255,255);
         }
 
     #Prueba.container DropDownList,
@@ -38,6 +55,7 @@
     }
         
     </style>
+        <div class="background"></div>
 
     <div class="title-panel">
         <asp:Label ID="LblTitulo" runat="server" Text="Registro de Funcionarios" CssClass="title-label"></asp:Label>

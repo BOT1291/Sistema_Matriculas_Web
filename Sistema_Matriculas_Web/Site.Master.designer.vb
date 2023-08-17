@@ -14,13 +14,13 @@ Option Explicit On
 Partial Public Class SiteMaster
 
     '''<summary>
-    '''Control LinkButton1.
+    '''Control LkCerrarSesion.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LinkButton1 As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents LkCerrarSesion As Global.System.Web.UI.WebControls.LinkButton
 
     '''<summary>
     '''Control MainContent.
@@ -30,4 +30,13 @@ Partial Public Class SiteMaster
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents MainContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
+
+    '''<summary>
+    '''Control footer.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents footer As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 End Class

@@ -1,7 +1,7 @@
 ﻿Public Class SiteMaster
     Inherits MasterPage
 
-    Protected Sub LinkButton1_Click(sender As Object, e As EventArgs) Handles LinkButton1.Click
+    Protected Sub LkCerrarSesion_Click(sender As Object, e As EventArgs) Handles LkCerrarSesion.Click
         'codigo para errores 
         Try
             FormsAuthentication.SignOut()

@@ -152,6 +152,7 @@
     <Content Include="Global.asax" />
     <Content Include="Login\FrmLogin.aspx" />
     <Content Include="Paginas\FrmFuncionarios.aspx" />
+    <Content Include="Paginas\FrmInicio.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -278,6 +279,13 @@
     </Compile>
     <Compile Include="Paginas\FrmFuncionarios.aspx.vb">
       <DependentUpon>FrmFuncionarios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\FrmInicio.aspx.designer.vb">
+      <DependentUpon>FrmInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FrmInicio.aspx.vb">
+      <DependentUpon>FrmInicio.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.vb">
