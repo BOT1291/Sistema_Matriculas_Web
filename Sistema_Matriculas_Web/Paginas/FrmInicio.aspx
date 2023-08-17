@@ -4,7 +4,7 @@
 
     <style>
 .footer-text {
-    color: orange;
+    color: blue;
 }
 body {
     margin: 0;
