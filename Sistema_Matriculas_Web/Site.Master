@@ -4,34 +4,34 @@
 <html lang="es">
 <head runat="server">
     <%-- Estilo para el despliegue de listas --%>
-     <style>
-        .nav-item {
-            position: relative;
+<style>
+    .nav-item {
+        position: relative;
         }
         
-        .nav-link {
-            display: block;
-            padding: 8px;
-            background-color: rgb(33,37,41);
-            color: white;
-            text-decoration: none;
+    .nav-link {
+        display: block;
+        padding: 8px;
+        background-color: rgb(33,37,41);
+        color: white;
+        text-decoration: none;
         }
 
-        .sub-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: rgb(33,37,41);
-            width: 170px;
-            z-index: 1;
-        }
+    .sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: rgb(33,37,41);
+        width: 170px;
+        z-index: 1;
+    }
 
-        .nav-item:hover .sub-menu {
-            display: block;
-        }
+    .nav-item:hover .sub-menu {
+        display: block;
+    }
 
-    </style>
+</style>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
@@ -80,18 +80,20 @@
                          <a class="nav-link">Registro</a>
                      <ul class="sub-menu">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmFuncionarios.aspx">Funcionarios</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="#">Estudiantes</a></li>   
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmEstudiantes">Estudiantes</a></li>   
                         <li class="nav-item"><a class="nav-link" runat="server" href="#">Contacto</a></li>     
                     </ul>
                  </li>
              </ul> 
                     <%-- fin de Registro --%>
                    
+ <%-- Donde podemos ir a las diferentes paginas --%>
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="FrmClientes.aspx">Modificación</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Acerca de</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contacto</a></li>     
                        </ul>
+                    <%-- Fin de las paginas --%>
 
 <%--Este codigo nos permite que el Cerrar Sesion este en el lado derecho--%>
                     <ul class="navbar-nav d-flex">
@@ -113,6 +115,7 @@
             </footer>
         </div>
         <%--Fin del Pie de Pagina--%>
+
     </form>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
