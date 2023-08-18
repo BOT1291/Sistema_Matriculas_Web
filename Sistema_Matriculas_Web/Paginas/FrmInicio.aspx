@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="vb" MasterPageFile="~/Site.Master" AutoEventWireup="false" CodeBehind="FrmInicio.aspx.vb" Inherits="Sistema_Matriculas_Web.FrmInicio" %>
 
 <asp:Content ID="PaginaInicio" ContentPlaceHolderID="MainContent" runat="server">
-
+    
     <style>
     .footer-text {
         font-size: 16px;

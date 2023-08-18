@@ -1,8 +1,8 @@
-﻿Public Class FrmClientes
-    Inherits PaginaBase
+﻿Public Class FrmModificacionFuncionarios
+    Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Me.VerificarCredencial()
+
     End Sub
 
 End Class

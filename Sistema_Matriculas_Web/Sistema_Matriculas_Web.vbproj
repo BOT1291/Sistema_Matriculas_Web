@@ -148,12 +148,15 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
-    <Content Include="FrmClientes.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Imagenes\logo_cuc_color.png" />
     <Content Include="Login\FrmLogin.aspx" />
+    <Content Include="Paginas\FrmConfirmacionEstudiantes.aspx" />
     <Content Include="Paginas\FrmEstudiantes.aspx" />
     <Content Include="Paginas\FrmFuncionarios.aspx" />
     <Content Include="Paginas\FrmInicio.aspx" />
+    <Content Include="Paginas\FrmModificacionEstudiantes.aspx" />
+    <Content Include="Paginas\FrmModificacionFuncionarios.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -236,13 +239,6 @@
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrmClientes.aspx.designer.vb">
-      <DependentUpon>FrmClientes.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FrmClientes.aspx.vb">
-      <DependentUpon>FrmClientes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -275,6 +271,13 @@
     <Compile Include="PaginaBase.vb">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Paginas\FrmConfirmacionEstudiantes.aspx.designer.vb">
+      <DependentUpon>FrmConfirmacionEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FrmConfirmacionEstudiantes.aspx.vb">
+      <DependentUpon>FrmConfirmacionEstudiantes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Paginas\FrmEstudiantes.aspx.designer.vb">
       <DependentUpon>FrmEstudiantes.aspx</DependentUpon>
     </Compile>
@@ -294,6 +297,20 @@
     </Compile>
     <Compile Include="Paginas\FrmInicio.aspx.vb">
       <DependentUpon>FrmInicio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\FrmModificacionEstudiantes.aspx.designer.vb">
+      <DependentUpon>FrmModificacionEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FrmModificacionEstudiantes.aspx.vb">
+      <DependentUpon>FrmModificacionEstudiantes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\FrmModificacionFuncionarios.aspx.designer.vb">
+      <DependentUpon>FrmModificacionFuncionarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FrmModificacionFuncionarios.aspx.vb">
+      <DependentUpon>FrmModificacionFuncionarios.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.vb">
