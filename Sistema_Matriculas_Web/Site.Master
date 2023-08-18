@@ -75,23 +75,39 @@
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
 
 <%--este es donde desplegamos para ampliar y tener mas ordenado la barrra de menu, en este caso es para el Registro--%>
-                     <ul class="navbar-nav">
+                    <ul class="navbar-nav">
                          <li class="nav-item">
                          <a class="nav-link">Registro</a>
                      <ul class="sub-menu">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmFuncionarios.aspx">Funcionarios</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmEstudiantes">Estudiantes</a></li>   
-                        <li class="nav-item"><a class="nav-link" runat="server" href="#">Contacto</a></li>     
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmEstudiantes.aspx">Estudiantes</a></li>   
                     </ul>
                  </li>
              </ul> 
                     <%-- fin de Registro --%>
+
+<%-- Lista para la confirmacion de estudiantes --%>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmConfirmacionEstudiantes.aspx">Confirmar Estudiante</a></li>     
+                       </ul>
+                    <%-- Fin de Confirmacion de estudiante --%>
                    
+<%-- Lista desplegale de a modificacion --%>
+                    <ul class="navbar-nav">
+                         <li class="nav-item">
+                         <a class="nav-link">Modificacion</a>
+                     <ul class="sub-menu">
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmModificacionFuncionarios.aspx">Funcionarios</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmModificacionEstudiantes.aspx">Estudiantes</a></li>   
+                        <li class="nav-item"><a class="nav-link" runat="server" href="#">Contacto</a></li>     
+                    </ul>
+                 </li>
+             </ul> 
+                    <%--fin de la lista desplegable de modificacion--%>
+
  <%-- Donde podemos ir a las diferentes paginas --%>
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="FrmClientes.aspx">Modificación</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Acerca de</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contacto</a></li>     
                        </ul>
                     <%-- Fin de las paginas --%>
 
