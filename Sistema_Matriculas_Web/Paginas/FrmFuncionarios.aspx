@@ -2,35 +2,40 @@
 
 <asp:Content ID="PaginaFuncionarios" ContentPlaceHolderID="MainContent" runat="server">
 
-
-    <style>
-        .footer-text {
-    color: orange;
-}
-
-        .background {
-     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*background: linear-gradient(45deg, #34495e, #2c3e50);*/ /* Colores más formales */
-    /*background: rgb(230,230,250);*/
-    background: rgb(33,43,61);/*un color mas llamativo*/
-    z-index: -1;
+<%-- Hoja de estilo para la pagina --%>
+<style>
+/*Estilo para cambiar el color del texto del footer*/    
+    .footer-text {
+        font-size: 16px;
+        color: rgb(255, 255, 255);
         }
 
+/*Estilo para cambiar el fondo de la pagina*/    
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /*background: linear-gradient(45deg, #34495e, #2c3e50);*/ /* Colores más formales */
+        /*background: rgb(230,230,250);*/
+        background: rgb(33,43,61);/*un color mas llamativo*/
+        z-index: -1;
+        }
+
+/*Estilo para cambiar el color del panel*/    
     .title-panel {
-            background: #333;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 24px;
-            margin-bottom: 20px;
-            text-align :center;
+        background: #333;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align :center;
         }
 
-    #Hola.center {
+/*Estilo para cambiar el centrado*/    
+    #Centrado.center {
         display: block;
         justify-content: center;
         align-items: center;
@@ -38,67 +43,70 @@
         text-align: center;
     }
 
-    #Prueba.container {
+/*Estilo para cambiar el centrado del contenido*/    
+    #Contenedor.container {
         padding: 40px;
         border: 2px solid #ccc;
         border-radius: 10px;
         width: 400px;
-            height: 665px;
-            background: rgb(255,255,255);
+        height: 665px;
+        background: rgb(255,255,255);
         }
 
-    #Prueba.container DropDownList,
-    #Prueba.container label,
-    #Prueba.container input,
-    #Prueba.container button {
+    #Contenedor.container DropDownList,
+    #Contenedor.container label,
+    #Contenedor.container input,
+    #Contenedor.container button {
         margin: 10px 0;
     }
-        
-    </style>
-        <div class="background"></div>
+       
+</style>
+    <%-- Fin de la hoja de estilos --%>
 
+
+    <div class="background"></div>
     <div class="title-panel">
         <asp:Label ID="LblTitulo" runat="server" Text="Registro de Funcionarios" CssClass="title-label"></asp:Label>
     </div>
-    <div id="Hola" class="center">
-        <div id="Prueba" class="container">
-<%--Sus respectivos campos para llenar y si nombre--%>
+    <div id="Centrado" class="center">
+        <div id="Contenedor" class="container">
+<%--Sus respectivos campos para llenar y su nombre--%>
          <asp:Label ID="LblIdentificacion" runat="server" Text="Identificacion"></asp:Label>
                    <br />
         <asp:TextBox ID="TxtIdentificacion" runat="server"></asp:TextBox>
                    <br />
 
-<%--Sus respectivos campos para llenar y si nombre--%>
+<%--Sus respectivos campos para llenar y su nombre--%>
         <asp:Label ID="LblNombre" runat="server" Text="Nombre"></asp:Label>
                  <br />
         <asp:TextBox ID="TxtNombre" runat="server"></asp:TextBox>
                   <br />
 
-<%--Sus respectivos campos para llenar y si nombre--%>
+<%--Sus respectivos campos para llenar y su nombre--%>
         <asp:Label ID="LblPrimerApellido" runat="server" Text="Primer Apellido"></asp:Label>
-             <br />
+             <br/>
          <asp:TextBox ID="TxtPrimerApellido" runat="server"></asp:TextBox>
-               <br />
+             <br/>
 
-<%--Sus respectivos campos para llenar y si nombre--%>
+<%--Sus respectivos campos para llenar y su nombre--%>
         <asp:Label ID="LblSegundoApellido" runat="server" Text="Seundo Apellido"></asp:Label>
-                   <br />
+             <br/>
         <asp:TextBox ID="TxtSegundoApellido" runat="server"></asp:TextBox>
-                <br />
+             <br/>
 
-<%--Sus respectivos campos para llenar y si nombre--%>
+<%--Sus respectivos campos para llenar y su nombre--%>
         <asp:Label ID="LblCorreo" runat="server" Text="Correo Electronico"></asp:Label>
             <br />
         <asp:TextBox ID="TxtCorreo" runat="server"></asp:TextBox>
             <br />
 
-<%--Sus respectivos campos para llenar y si nombre--%>
+<%--Sus respectivos campos para llenar y su nombre--%>
         <asp:Label ID="LblClave" runat="server" Text="Clave"></asp:Label>
             <br />
         <asp:TextBox ID="TxtClave" runat="server"></asp:TextBox>
             <br />
 
-<%--Sus respectivos campos para llenar y si nombre--%>
+<%--Sus respectivos campos para llenar y su nombre--%>
         <asp:Label ID="LblEstado" runat="server" Text="Estado"></asp:Label>
             <br />
             <br />
