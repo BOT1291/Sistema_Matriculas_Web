@@ -3,6 +3,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head runat="server">
+    <script>
+    function soloLetras(event) {
+        var charCode = (event.which) ? event.which : event.keyCode;
+        if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122) && (charCode != 32)) {
+            return false;
+        }
+        return true;
+    }
+    </script>
     <%-- Estilo para el despliegue de listas --%>
 <style>
     .nav-item {
@@ -42,6 +51,7 @@
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
     <form runat="server">
@@ -108,6 +118,8 @@
  <%-- Donde podemos ir a las diferentes paginas --%>
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Acerca de</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmListaFuncionario.aspx">Lista Funcionarios</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmListaCursos.aspx">Lista cursos</a></li>
                        </ul>
                     <%-- Fin de las paginas --%>
 

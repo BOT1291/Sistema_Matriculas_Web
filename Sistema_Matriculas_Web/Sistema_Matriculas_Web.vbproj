@@ -153,10 +153,11 @@
     <Content Include="Login\FrmLogin.aspx" />
     <Content Include="Paginas\FrmConfirmacionEstudiantes.aspx" />
     <Content Include="Paginas\FrmEstudiantes.aspx" />
-    <Content Include="Paginas\FrmFuncionarios.aspx" />
+    <Content Include="Paginas\FrmListaCursos.aspx" />
+    <Content Include="Paginas\FrmListaFuncionario.aspx" />
+    <Content Include="Paginas\FrmRegistroCursos.aspx" />
+    <Content Include="Paginas\FrmRegistroFuncionario.aspx" />
     <Content Include="Paginas\FrmInicio.aspx" />
-    <Content Include="Paginas\FrmModificacionEstudiantes.aspx" />
-    <Content Include="Paginas\FrmModificacionFuncionarios.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -223,14 +224,14 @@
     </Compile>
     <Compile Include="About.aspx.vb">
       <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.vb">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.vb">
       <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.vb">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -266,7 +267,7 @@
     </Compile>
     <Compile Include="Login\FrmLogin.aspx.vb">
       <DependentUpon>FrmLogin.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="PaginaBase.vb">
       <SubType>ASPXCodeBehind</SubType>
@@ -285,32 +286,39 @@
       <DependentUpon>FrmEstudiantes.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Paginas\FrmFuncionarios.aspx.designer.vb">
-      <DependentUpon>FrmFuncionarios.aspx</DependentUpon>
+    <Compile Include="Paginas\FrmListaCursos.aspx.designer.vb">
+      <DependentUpon>FrmListaCursos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\FrmFuncionarios.aspx.vb">
-      <DependentUpon>FrmFuncionarios.aspx</DependentUpon>
+    <Compile Include="Paginas\FrmListaCursos.aspx.vb">
+      <DependentUpon>FrmListaCursos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\FrmListaFuncionario.aspx.designer.vb">
+      <DependentUpon>FrmListaFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FrmListaFuncionario.aspx.vb">
+      <DependentUpon>FrmListaFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\FrmRegistroCursos.aspx.designer.vb">
+      <DependentUpon>FrmRegistroCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FrmRegistroCursos.aspx.vb">
+      <DependentUpon>FrmRegistroCursos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\FrmRegistroFuncionario.aspx.designer.vb">
+      <DependentUpon>FrmRegistroFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FrmRegistroFuncionario.aspx.vb">
+      <DependentUpon>FrmRegistroFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Paginas\FrmInicio.aspx.designer.vb">
       <DependentUpon>FrmInicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\FrmInicio.aspx.vb">
       <DependentUpon>FrmInicio.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\FrmModificacionEstudiantes.aspx.designer.vb">
-      <DependentUpon>FrmModificacionEstudiantes.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\FrmModificacionEstudiantes.aspx.vb">
-      <DependentUpon>FrmModificacionEstudiantes.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\FrmModificacionFuncionarios.aspx.designer.vb">
-      <DependentUpon>FrmModificacionFuncionarios.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\FrmModificacionFuncionarios.aspx.vb">
-      <DependentUpon>FrmModificacionFuncionarios.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.vb">
@@ -376,6 +384,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{3993cd56-d9ab-4084-8422-7a2617308ba3}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.vbproj">
+      <Project>{588acc9a-edfd-4368-9ad4-386273f5a8d0}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
