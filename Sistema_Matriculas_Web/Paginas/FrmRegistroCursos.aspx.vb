@@ -47,8 +47,8 @@
                 .Nota_minima = CInt(TxtNotaMinima.Text),
                 .Estudiantes_Min = CInt(TxtEstudianteMin.Text),
                 .Estudiantes_Max = CInt(TxtEstudiantesMax.Text),
-                .Grado = Me.TxtGrado.Text.Trim,
-                .Estado = Me.TxtEstado.Text.Trim
+                .Grado = Me.DDLGrado.Text.Trim,
+                .Estado = Me.DDLEstado.Text.Trim
             }
 
                 Dim iCarrera As New Negocios.NegCursos
@@ -70,7 +70,6 @@
 
         Me.TxtId.ReadOnly = True
         Me.TxtCarrera.ReadOnly = True
-        Me.TxtCosto.ReadOnly = True
 
         If iCarrera IsNot Nothing Then
             Me.TxtCarrera.Text = iInfoCarrera.Carrera
@@ -80,9 +79,8 @@
             Me.TxtNotaMinima.Text = iInfoCarrera.Nota_minima
             Me.TxtEstudianteMin.Text = iInfoCarrera.Estudiantes_Min
             Me.TxtEstudiantesMax.Text = iInfoCarrera.Estudiantes_Max
-            Me.TxtGrado.Text = iInfoCarrera.Grado
-            Me.TxtEstado.Text = iInfoCarrera.Estado
-            Me.TxtCosto.Text = iInfoCarrera.Costo
+            Me.DDLGrado.Text = iInfoCarrera.Grado
+            Me.DDLEstado.Text = iInfoCarrera.Estado
             'Else
             '    Me.lblMensaje.Visible = True
             '    Me.lblMensaje.InnerText = "La carrera selecciona no pose informacion en la base de datos. Verificar"

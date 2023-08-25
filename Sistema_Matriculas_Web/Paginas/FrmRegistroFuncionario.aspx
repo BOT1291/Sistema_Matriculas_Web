@@ -48,7 +48,7 @@
         padding: 40px;
         border: 2px solid #ccc;
         border-radius: 10px;
-        width: 400px;
+        width: 411px;
         height: 745px;
         background: rgb(255,255,255);
         }
@@ -72,7 +72,7 @@
     <%-- Fin de la hoja de estilos --%>
 
 
-    <div class="background"></div>
+   <div class="background"></div>
     <div class="title-panel">
         <asp:Label ID="LblTitulo" runat="server" Text="Registro de Funcionarios" CssClass="title-label"></asp:Label>
     </div>
@@ -83,62 +83,41 @@
                 <label for="LblIdentificacion">Identificación</label>
                 <br />
                 <asp:TextBox ID="TxtIdentificacion" runat="server" required="required" placeholder="Example: 123456789" minlength="9" MaxLength="12" type="number" ></asp:TextBox>
-                <asp:RegularExpressionValidator ID="RegexValidatorIdentificacion" runat="server"
-                    ControlToValidate="TxtIdentificacion"
-                    ValidationExpression="^\d+$"
-                    Display="Dynamic">
-                </asp:RegularExpressionValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="TxtIdentificacion" Display="Dynamic"></asp:RequiredFieldValidator>
+                <p id="mensaje" style="color: red;"></p>
             </div>
 
 
             <div class="form-group">
                 <label for="TxtNombre">Nombre</label>
                 <br />
-                <asp:TextBox ID="TxtNombre" runat="server" onkeypress="return soloLetras(event)" required="required" title="Ingresa un nombre válido"></asp:TextBox>
-
-<%--                <asp:TextBox ID="TxtNombre" runat="server" required="required" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+" title="Ingresa un nombre válido"></asp:TextBox>
-                <asp:RegularExpressionValidator ID="RegexValidatorNombre" runat="server"
-                    ControlToValidate="TxtNombre"
-                    ValidationExpression="^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$"
-                    ErrorMessage="Ingresa un nombre válido."
-                    Display="Dynamic">
-                </asp:RegularExpressionValidator>--%>
+                <asp:TextBox ID="TxtNombre" runat="server" onkeypress="return soloLetras(event)" required="required" placeholder="Example: Marcos" title="Ingresa un nombre válido"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="da" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="TxtNombre" Display="Dynamic"></asp:RequiredFieldValidator>
             </div>
 
 
             <div class="form-group">
                 <label for="TxtPrimerApellido">Primer Apellido</label>
                 <br />
-                <asp:TextBox ID="TxtPrimerApellido" runat="server" required="required" placeholder="Example: Reyes" title="Ingresa tu Primer Apellido"></asp:TextBox>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server"
-                    ControlToValidate="TxtPrimerApellido"
-                    ValidationExpression="^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$"
-                    Display="Dynamic">
-                </asp:RegularExpressionValidator>
+                <asp:TextBox ID="TxtPrimerApellido" runat="server" onkeypress="return soloLetras(event)" required="required" placeholder="Example: Reyes" title="Ingresa tu Primer Apellido"></asp:TextBox>
+                <%--<asp:RegularExpressionValidator ID="revPrimerApellido" runat="server" ControlToValidate="TxtPrimerApellido" ValidationExpression="^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$" Display="Dynamic"></asp:RegularExpressionValidator>--%>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="TxtPrimerApellido"></asp:RequiredFieldValidator>
             </div>
 
             <div class="form-group">
                 <label for="TxtSegundoApellido">Segundo Apellido</label>
                 <br />
-                <asp:TextBox ID="TxtSegundoApellido" runat="server" required="required" placeholder="Example: Rojas" title="Ingresa tu Segundo Apellido"></asp:TextBox>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server"
-                    ControlToValidate="TxtSegundoApellido"
-                    ValidationExpression="^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$"
-                    Display="Dynamic">
-                </asp:RegularExpressionValidator>
+                <asp:TextBox ID="TxtSegundoApellido" runat="server" onkeypress="return soloLetras(event)" required="required" placeholder="Example: Rojas" title="Ingresa tu Segundo Apellido"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="TxtSegundoApellido"></asp:RequiredFieldValidator>
             </div>
-
 
 
             <div class="form-group">
                 <label for="TxtCorreo">Correo Electrónico</label>
                 <br />
                 <asp:TextBox ID="TxtCorreo" runat="server" required="required" placeholder="Random@Example.com"></asp:TextBox>
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server"
-                    ControlToValidate="TxtCorreo"
-                    ValidationExpression="^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$"
-                    Display="Dynamic">
-                </asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtCorreo" ValidationExpression="^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$" Display="Dynamic"></asp:RegularExpressionValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="TxtCorreo"></asp:RequiredFieldValidator>
             </div>
 
             <div class="form-gruop">
@@ -146,15 +125,10 @@
                 <asp:Label ID="LblClave" runat="server" Text="Clave"></asp:Label>
                 <br />
                 <asp:TextBox ID="TxtClave" runat="server" requierd="requiered" placeholder="Example: Passw0rd!"></asp:TextBox>
-                <asp:RegularExpressionValidator ID="RegexValidator" runat="server"
-                    ControlToValidate="TxtClave"
-                    ValidationExpression="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$"
-                    Display="Dynamic">
-                </asp:RegularExpressionValidator>
-
+                <asp:RegularExpressionValidator ID="RegexValidator" runat="server" ControlToValidate="TxtClave" ValidationExpression="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$" Display="Dynamic"></asp:RegularExpressionValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="TxtClave"></asp:RequiredFieldValidator>
             </div>
                 
-
 
                 <%--Sus respectivos campos para llenar y su nombre--%>
                 <asp:Label ID="LblEstado" runat="server" Text="Estado"></asp:Label>
@@ -178,8 +152,6 @@
                  
             </div>
         </div>
-    </div>
 
 
 </asp:Content>
-

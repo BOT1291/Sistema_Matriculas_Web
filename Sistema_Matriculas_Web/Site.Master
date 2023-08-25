@@ -3,15 +3,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head runat="server">
-    <script>
+<%-- Permite solo ingresar numeros --%>
+<script>
+    function soloNumeros(event) {
+        var charCode = (event.which) ? event.which : event.keyCode;
+        var inputField = event.target || event.srcElement;
+        var inputValue = inputField.value + String.fromCharCode(charCode);
+
+        if (charCode < 48 || charCode > 57) {
+            toastr.error("Por favor, ingresa solo números.");
+            return false;
+        } else if (inputValue.length < 9 || inputValue.length > 12) {
+            toastr.error("El número de dígitos debe estar entre 9 y 12.");
+            return false;
+        } else {
+            toastr.success("Los dígitos están correctos.");
+            return true;
+        }
+    }
+</script>
+
+
+<script>
     function soloLetras(event) {
         var charCode = (event.which) ? event.which : event.keyCode;
-        if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122) && (charCode != 32)) {
+
+        // Permitir las letras de la 'a' a la 'z', incluyendo la 'ñ', y el espacio en blanco.
+        if ((charCode >= 65 && charCode <= 90) || // Mayúsculas
+            (charCode >= 97 && charCode <= 122) || // Minúsculas
+            charCode === 32 || // Espacio en blanco
+            charCode === 209 || charCode === 241) { // Ñ y ñ
+            return true;
+        } else {
             return false;
         }
-        return true;
     }
-    </script>
+</script>
+
+
+
     <%-- Estilo para el despliegue de listas --%>
 <style>
     .nav-item {

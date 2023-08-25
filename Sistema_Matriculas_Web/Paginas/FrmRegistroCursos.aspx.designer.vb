@@ -86,31 +86,22 @@ Partial Public Class FrmRegistroCursos
     Protected WithEvents TxtEstudiantesMax As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control TxtGrado.
+    '''Control DDLGrado.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TxtGrado As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DDLGrado As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Control TxtEstado.
+    '''Control DDLEstado.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TxtEstado As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control TxtCosto.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents TxtCosto As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DDLEstado As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
     '''Control BtnPrueba.
