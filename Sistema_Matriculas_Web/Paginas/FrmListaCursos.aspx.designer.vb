@@ -11,5 +11,14 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class FrmModificacionFuncionarios
+Partial Public Class FrmListaCursos
+
+    '''<summary>
+    '''Control lstCurso.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lstCurso As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 End Class

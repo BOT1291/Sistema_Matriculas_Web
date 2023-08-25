@@ -11,43 +11,16 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class FrmConfirmacionEstudiantes
+Partial Public Class FrmFuncionarios
 
     '''<summary>
-    '''Control LblCarne.
+    '''Control LblTitulo.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LblCarne As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control TxtCarne.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents TxtCarne As Global.System.Web.UI.WebControls.TextBox
-
-    '''<summary>
-    '''Control ButtonBuscar.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents ButtonBuscar As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Control LblIdentificacion.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents LblIdentificacion As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents LblTitulo As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''Control TxtIdentificacion.
@@ -59,110 +32,128 @@ Partial Public Class FrmConfirmacionEstudiantes
     Protected WithEvents TxtIdentificacion As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control LblCarreraMAtriculada.
+    '''Control RegexValidatorIdentificacion.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LblCarreraMAtriculada As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents RegexValidatorIdentificacion As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''Control TxtCarreraMatriculada.
+    '''Control TxtNombre.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TxtCarreraMatriculada As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TxtNombre As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control LblCursos.
+    '''Control TxtPrimerApellido.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LblCursos As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents TxtPrimerApellido As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control CBCurso1.
+    '''Control RegularExpressionValidator2.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents CBCurso1 As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents RegularExpressionValidator2 As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''Control CBCurso2.
+    '''Control TxtSegundoApellido.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents CBCurso2 As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents TxtSegundoApellido As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control LblBeca.
+    '''Control RegularExpressionValidator3.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents LblBeca As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents RegularExpressionValidator3 As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''Control TxtBeca.
+    '''Control TxtCorreo.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TxtBeca As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TxtCorreo As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control Lbl.
+    '''Control RegularExpressionValidator1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Lbl As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents RegularExpressionValidator1 As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''Control TxtCostoTotal.
+    '''Control LblClave.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TxtCostoTotal As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents LblClave As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control GVMostarEstudiantes.
+    '''Control TxtClave.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents GVMostarEstudiantes As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents TxtClave As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control Button2.
+    '''Control RegexValidator.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents RegexValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
 
     '''<summary>
-    '''Control Button1.
+    '''Control LblEstado.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents LblEstado As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''Control DDLEstado.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents DDLEstado As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control BtnRegistrar.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents BtnRegistrar As Global.System.Web.UI.WebControls.Button
 End Class
