@@ -32,13 +32,13 @@ Partial Public Class FrmFuncionarios
     Protected WithEvents TxtIdentificacion As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control RegexValidatorIdentificacion.
+    '''Control RequiredFieldValidator5.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents RegexValidatorIdentificacion As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    Protected WithEvents RequiredFieldValidator5 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''Control TxtNombre.
@@ -50,6 +50,15 @@ Partial Public Class FrmFuncionarios
     Protected WithEvents TxtNombre As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control da.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents da As Global.System.Web.UI.WebControls.RequiredFieldValidator
+
+    '''<summary>
     '''Control TxtPrimerApellido.
     '''</summary>
     '''<remarks>
@@ -59,13 +68,13 @@ Partial Public Class FrmFuncionarios
     Protected WithEvents TxtPrimerApellido As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control RegularExpressionValidator2.
+    '''Control RequiredFieldValidator1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents RegularExpressionValidator2 As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    Protected WithEvents RequiredFieldValidator1 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''Control TxtSegundoApellido.
@@ -77,13 +86,13 @@ Partial Public Class FrmFuncionarios
     Protected WithEvents TxtSegundoApellido As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control RegularExpressionValidator3.
+    '''Control RequiredFieldValidator3.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents RegularExpressionValidator3 As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    Protected WithEvents RequiredFieldValidator3 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''Control TxtCorreo.
@@ -102,6 +111,15 @@ Partial Public Class FrmFuncionarios
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RegularExpressionValidator1 As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
+    '''Control RequiredFieldValidator2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator2 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''Control LblClave.
@@ -129,6 +147,15 @@ Partial Public Class FrmFuncionarios
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents RegexValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+
+    '''<summary>
+    '''Control RequiredFieldValidator4.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator4 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''Control LblEstado.
