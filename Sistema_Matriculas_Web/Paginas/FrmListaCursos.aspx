@@ -15,8 +15,8 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Codigo Carrera</th>
                     <th scope="col">Codigo Curso</th>
+                    <th scope="col">Codigo Carrea</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Creditos</th>
                     <th scope="col">Nota Minima</th>

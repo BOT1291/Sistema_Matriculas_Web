@@ -2,12 +2,12 @@
     Inherits System.Web.UI.Page
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
-        Dim eUsuarios As Entidades.EntiUsuarios = CType(Session("usuario"), Entidades.EntiUsuarios)
-            If eUsuarios Is Nothing Then
-                FormsAuthentication.RedirectToLoginPage()
-            End If
+        'Dim eUsuarios As Entidades.EntiUsuarios = CType(Session("usuario"), Entidades.EntiUsuarios)
+        '    If eUsuarios Is Nothing Then
+        '        FormsAuthentication.RedirectToLoginPage()
+        '    End If
 
-            Dim intAccion As Short = CShort(Request.QueryString("accion"))
+        Dim intAccion As Short = CShort(Request.QueryString("accion"))
         Dim intCodigo As Integer = CInt(Request.QueryString("codigo"))
         ViewState("accion") = intAccion
 
@@ -63,6 +63,8 @@
 
         Catch ex As Exception
             Session("Error") = ex
+            Response.Redirect("~/Paginas/FrmError")
+
         End Try
 
     End Sub

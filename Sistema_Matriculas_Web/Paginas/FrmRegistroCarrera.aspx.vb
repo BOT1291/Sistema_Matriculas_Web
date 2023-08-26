@@ -1,4 +1,4 @@
-﻿Public Class FrmRegistroCursos
+﻿Public Class FrmRegistroCarrera
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -10,21 +10,22 @@
             Select Case intAccion
                 Case 1
                     Me.LblTitulo.Text = "Registrar Carrera"
-                    Me.BtnPrueba.Text = "Registrar"
+                    Me.BtnRegistrar.Text = "Registrar"
 
                 Case 2
                     Me.LblTitulo.Text = "Modificar Carrera"
-                    Me.BtnPrueba.Text = "Modificar"
+                    Me.BtnRegistrar.Text = "Modificar"
                     Me.Leer(intCodigo)
                 Case 3
                     Me.LblTitulo.Text = "Eliminar Carrera"
-                    Me.BtnPrueba.Text = "Eliminar"
+                    Me.BtnRegistrar.Text = "Eliminar"
                     Me.Leer(intCodigo)
             End Select
         End If
     End Sub
 
-    Protected Sub BtnPrueba_click(sender As Object, e As EventArgs) Handles BtnPrueba.Click
+
+    Protected Sub BtnRegistrar_click(sender As Object, e As EventArgs) Handles BtnRegistrar.Click
         Try
             Dim intAccion As Short = ViewState("accion")
             Dim eAccion As Entidades.EntiEnumeradores.Accion = Entidades.EntiEnumeradores.Accion.Registrar
@@ -33,59 +34,41 @@
                 Select Case intAccion
                     Case 1
                         eAccion = Entidades.EntiEnumeradores.Accion.Registrar
-                        ScriptManager.RegisterStartupScript(Me, GetType(Page), "SweetAlert", "Swal.fire('se ingreso', 'Las credenciales que ingresadas son inválidas.', 'error');", True)
-
                     Case 2
                         eAccion = Entidades.EntiEnumeradores.Accion.Modificar
-                        Me.lblMensaje.Visible = True
-
                     Case 3
                         eAccion = Entidades.EntiEnumeradores.Accion.Borrar
-                        Me.lblMensaje.Visible = True
-
                 End Select
 
-                Dim iInfoCarrera As New Entidades.EntiCursos With {
-                .Carrera = Me.TxtCarrera.Text.Trim,
-                .Id = CInt(TxtId.Text),
-                .Nombre = Me.TxtNombre.Text,
-                .Creditos = CInt(TxtCreditos.Text),
-                .Nota_minima = CInt(TxtNotaMinima.Text),
-                .Estudiantes_Min = CInt(TxtEstudianteMin.Text),
-                .Estudiantes_Max = CInt(TxtEstudiantesMax.Text),
-                .Grado = Me.DDLGrado.Text.Trim,
+                Dim iInfoCarrera As New Entidades.EntiCarrera With {
+                .Identificacion = Me.TxtIdentificacion.Text.Trim,
+                .Nombre = Me.TxtNombre.Text.Trim,
                 .Estado = Me.DDLEstado.Text.Trim
-            }
+                }
 
-                Dim iCarrera As New Negocios.NegCursos
-                iCarrera.GrabarNEg(iInfoCarrera, eAccion)
+                Dim iCarrera As New Negocios.NegCarrera
+                iCarrera.GrabarN(iInfoCarrera, intAccion)
 
             End If
+
 
         Catch ex As Exception
             Session("Error") = ex
         End Try
+
     End Sub
 
 
 
-
     Public Sub Leer(ByVal idCarrera As Integer)
-        Dim iCarrera As New Negocios.NegCursos
-        Dim iInfoCarrera As Entidades.EntiCursos = iCarrera.Cursos(idCarrera)
+        Dim iCarrera As New Negocios.NegCarrera
+        Dim iInfoCarrera As Entidades.EntiCarrera = iCarrera.Funcionarios(idCarrera)
 
-        Me.TxtId.ReadOnly = True
-        Me.TxtCarrera.ReadOnly = True
+        Me.TxtIdentificacion.ReadOnly = True
 
         If iCarrera IsNot Nothing Then
-            Me.TxtCarrera.Text = iInfoCarrera.Carrera
-            Me.TxtId.Text = iInfoCarrera.Id
+            Me.TxtIdentificacion.Text = iInfoCarrera.Identificacion
             Me.TxtNombre.Text = iInfoCarrera.Nombre
-            Me.TxtCreditos.Text = iInfoCarrera.Creditos
-            Me.TxtNotaMinima.Text = iInfoCarrera.Nota_minima
-            Me.TxtEstudianteMin.Text = iInfoCarrera.Estudiantes_Min
-            Me.TxtEstudiantesMax.Text = iInfoCarrera.Estudiantes_Max
-            Me.DDLGrado.Text = iInfoCarrera.Grado
             Me.DDLEstado.Text = iInfoCarrera.Estado
             'Else
             '    Me.lblMensaje.Visible = True
@@ -94,6 +77,5 @@
         End If
 
     End Sub
-
 
 End Class

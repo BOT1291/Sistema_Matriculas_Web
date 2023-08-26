@@ -79,9 +79,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NegCarrera.vb" />
     <Compile Include="NegCursos.vb" />
+    <Compile Include="NegEstudiante.vb" />
     <Compile Include="NegFuncionario.vb" />
     <Compile Include="NegLogin.vb" />
+    <Compile Include="NegMatricula.vb" />
+    <Compile Include="NegMatriculaCurso.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

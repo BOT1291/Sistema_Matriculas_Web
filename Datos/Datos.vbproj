@@ -64,8 +64,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatosCarrera.vb" />
     <Compile Include="DatosCursos.vb" />
+    <Compile Include="DatosEstudiante.vb" />
     <Compile Include="DatosFuncionarios.vb" />
+    <Compile Include="DatosMatricula.vb" />
+    <Compile Include="DatosMatriculaCurso.vb" />
     <Compile Include="DatosUsuario.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

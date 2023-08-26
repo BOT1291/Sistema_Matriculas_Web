@@ -23,6 +23,17 @@
     }
 </script>
 
+       <script>
+           function soloNumeross(event) {
+               var charCode = (event.which) ? event.which : event.keyCode;
+
+               if (charCode < 48 || charCode > 57) {
+                   return false;
+               }
+
+               return true;
+           }
+       </script>
 
 <script>
     function soloLetras(event) {
@@ -150,6 +161,7 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Acerca de</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmListaFuncionario.aspx">Lista Funcionarios</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmListaCursos.aspx">Lista cursos</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Paginas/FrmListaCarrera.aspx">Lista carrera</a></li>
                        </ul>
                     <%-- Fin de las paginas --%>
 
