@@ -5,7 +5,16 @@
     <div class="login-container">
         <h1>Iniciar Session</h1>
         <asp:TextBox ID="txtPassword" runat="server" placeholder="Clave"></asp:TextBox>
+        <asp:RegularExpressionValidator ID="revPassword" runat="server"
+            ControlToValidate="txtPassword"
+            ErrorMessage="La contraseña no cumple con los requisitos de seguridad."
+            ValidationExpression="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$"
+            Display="Dynamic">
+        </asp:RegularExpressionValidator>
+
+
         <asp:TextBox ID="txtUsuario" runat="server" placeholder="Email"></asp:TextBox>
+
         <asp:Button ID="BtnRegistrar" runat="server" Text="Button" />
     </div>
 

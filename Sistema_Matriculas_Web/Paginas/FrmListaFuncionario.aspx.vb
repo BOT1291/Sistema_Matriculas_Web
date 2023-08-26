@@ -3,14 +3,14 @@
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         'seguridad
-        Try
-            Dim eUsuarios As Entidades.EntiUsuarios = CType(Session("usuario"), Entidades.EntiUsuarios)
-            If eUsuarios Is Nothing Then
-                FormsAuthentication.RedirectToLoginPage()
-            End If
-        Catch ex As Exception
-            Throw ex
-        End Try
+        'Try
+        '    Dim eUsuarios As Entidades.EntiUsuarios = CType(Session("usuario"), Entidades.EntiUsuarios)
+        '    If eUsuarios Is Nothing Then
+        '        FormsAuthentication.RedirectToLoginPage()
+        '    End If
+        'Catch ex As Exception
+        '    Throw ex
+        'End Try
 
         Try
             Dim iCarreras As New Negocios.NegFuncionario
@@ -57,7 +57,8 @@
 
 
         Catch ex As Exception
-            Session("error") = ex
+
+            Response.Redirect("~/Paginas/FrmError.aspx")
         End Try
 
     End Sub

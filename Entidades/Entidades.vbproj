@@ -64,9 +64,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntiCarrera.vb" />
     <Compile Include="EntiCursos.vb" />
     <Compile Include="EntiEnumeradores.vb" />
+    <Compile Include="EntiEstudiante.vb" />
     <Compile Include="EntiFuncionario.vb" />
+    <Compile Include="EntiMatricula.vb" />
+    <Compile Include="EntiMatriculaCurso.vb" />
+    <Compile Include="EntiMatriculaTabla.vb" />
     <Compile Include="EntiUsuarios.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

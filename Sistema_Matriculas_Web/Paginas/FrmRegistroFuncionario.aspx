@@ -146,7 +146,7 @@
                 <div class="form-group">
                     <div class="buttons-container">
                         <asp:Button ID="BtnRegistrar" runat="server" Text="Registrar" CssClass="submit-button" />
-                        <a href="FrmListaFuncionario.aspx" class="btn btn-danger">Volver</a>
+                        <a href="~/Paginas/FrmListaFuncionario.aspx" class="btn btn-danger">Volver</a>
                     </div>
                 </div>
                  

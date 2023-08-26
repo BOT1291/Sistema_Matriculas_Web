@@ -16,7 +16,7 @@
         </div>
         <div class="form-group">
             <label for="d">Numero Codigo</label>
-            <asp:TextBox ID="TxtId" runat="server" required="required" placeholder="Example: 102"></asp:TextBox>
+            <asp:TextBox ID="TxtId" runat="server" onkeypress="return soloNumeross(event)" required="required" placeholder="Example: 102"></asp:TextBox>
 
         </div>
         <div class="form-group">
@@ -26,22 +26,22 @@
         </div>
         <div class="form-group">
             <label for="g">Creditos</label>
-            <asp:TextBox ID="TxtCreditos" runat="server" required="required" placeholder="Example: ####"></asp:TextBox>
+            <asp:TextBox ID="TxtCreditos" runat="server" onkeypress="return soloNumeross(event)"  required="required" placeholder="Example: ####"></asp:TextBox>
 
         </div>
         <div class="form-group">
             <label for="d">Nota Minima</label>
-            <asp:TextBox ID="TxtNotaMinima" runat="server" required="required" placeholder="Example: #####"></asp:TextBox>
+            <asp:TextBox ID="TxtNotaMinima" runat="server" onkeypress="return soloNumeross(event)"  required="required" placeholder="Example: #####"></asp:TextBox>
 
         </div>
         <div class="form-group">
             <label for="a">Estudiantes Min</label>
-            <asp:TextBox ID="TxtEstudianteMin" runat="server" required="required" placeholder="Example: #####"></asp:TextBox>
+            <asp:TextBox ID="TxtEstudianteMin" runat="server" onkeypress="return soloNumeross(event)"  required="required" placeholder="Example: #####"></asp:TextBox>
 
         </div>
         <div class="form-group">
             <label for="q">Estudiantes Max</label>
-            <asp:TextBox ID="TxtEstudiantesMax" runat="server" required="required" placeholder="Example: ####"></asp:TextBox>
+            <asp:TextBox ID="TxtEstudiantesMax" runat="server" onkeypress="return soloNumeross(event)"  required="required" placeholder="Example: ####"></asp:TextBox>
 
         </div>
         <div class="form-group">

@@ -152,9 +152,12 @@
     <Content Include="Imagenes\logo_cuc_color.png" />
     <Content Include="Login\FrmLogin.aspx" />
     <Content Include="Paginas\FrmConfirmacionEstudiantes.aspx" />
+    <Content Include="Paginas\FrmError.aspx" />
     <Content Include="Paginas\FrmEstudiantes.aspx" />
+    <Content Include="Paginas\FrmListaCarrera.aspx" />
     <Content Include="Paginas\FrmListaCursos.aspx" />
     <Content Include="Paginas\FrmListaFuncionario.aspx" />
+    <Content Include="Paginas\FrmRegistroCarrera.aspx" />
     <Content Include="Paginas\FrmRegistroCursos.aspx" />
     <Content Include="Paginas\FrmRegistroFuncionario.aspx" />
     <Content Include="Paginas\FrmInicio.aspx" />
@@ -279,11 +282,25 @@
       <DependentUpon>FrmConfirmacionEstudiantes.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Paginas\FrmError.aspx.designer.vb">
+      <DependentUpon>FrmError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FrmError.aspx.vb">
+      <DependentUpon>FrmError.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Paginas\FrmEstudiantes.aspx.designer.vb">
       <DependentUpon>FrmEstudiantes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\FrmEstudiantes.aspx.vb">
       <DependentUpon>FrmEstudiantes.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\FrmListaCarrera.aspx.designer.vb">
+      <DependentUpon>FrmListaCarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FrmListaCarrera.aspx.vb">
+      <DependentUpon>FrmListaCarrera.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Paginas\FrmListaCursos.aspx.designer.vb">
@@ -298,6 +315,13 @@
     </Compile>
     <Compile Include="Paginas\FrmListaFuncionario.aspx.vb">
       <DependentUpon>FrmListaFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\FrmRegistroCarrera.aspx.designer.vb">
+      <DependentUpon>FrmRegistroCarrera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\FrmRegistroCarrera.aspx.vb">
+      <DependentUpon>FrmRegistroCarrera.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Paginas\FrmRegistroCursos.aspx.designer.vb">
